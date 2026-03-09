@@ -15,5 +15,5 @@ Content-Type: application/json
 {
   "nome": "Hambúrguer Artesanal",
   "descricao": "Pão, carne  e queijo",
-  "preco": 35.50
+  "preco": 36.90
 }
