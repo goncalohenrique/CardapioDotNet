@@ -1,0 +1,19 @@
+@Goncalo.Cardapio.Api_HostAddress = http://localhost:5264
+
+GET {{Goncalo.Cardapio.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### Listar itens do cardápio
+GET http://localhost:5000/cardapio
+
+### Adicionar um item (Ajuste a porta conforme o seu projeto)
+POST http://localhost:5000/cardapio
+Content-Type: application/json
+
+{
+  "nome": "Hambúrguer Artesanal",
+  "descricao": "Pão, carne  e queijo",
+  "preco": 35.50
+}
