@@ -23,5 +23,13 @@ app.MapPost("/cardapio",
         return Results.Created($"/cardapio/{itemNovo.id}", itemNovo);
     });
 
+app.MapDelete("/cardapio/{id}",
+    async (CancellationToken id, CardapioDBContext db) =>
+    {
+        db.Itens.ExecuteDeleteAsync(id);
+        await db.SaveChangesAsync();
+        return Results.NoContent();
+    });
+
 app.Run();
     
